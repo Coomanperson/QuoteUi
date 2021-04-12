@@ -21,7 +21,7 @@ function App() {
     fetch('https://localhost:44343/authentication/authenticate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userName: "", password: "" })
+      body: JSON.stringify({ userName: "test", password: "test" })
     })
     .then(response => response.text())
     .then(jwt => setJwt(jwt))
